@@ -1,3 +1,9 @@
+include_recipe "libperl"
+include_recipe "libsensors"
+include_recipe "libsnmp-base"
+include_recipe "libssl"
+include_recipe "libwrap"
+
 packages = Array.new
 
 case node[:lsb][:codename]
